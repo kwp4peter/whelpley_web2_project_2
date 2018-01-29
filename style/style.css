@@ -1,0 +1,347 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* END CSS RESET */ 
+
+@font-face{
+	font-family: modestFont;
+	src: url(../assets/Industry.ttf);
+}
+
+@font-face{
+	font-family: arrowFont;
+	src: url(../assets/Prohibition.ttf);
+}
+
+h1
+{
+	font-size: 2.5em;
+	font-family: modestFont;
+	width: 313px;
+	margin: 0 auto;
+	color: white;
+	margin-top: 30px;
+}
+
+body
+{
+	background-attachment: fixed;
+	background: url(../images/mountaindark.jpg) no-repeat center center;
+}
+
+#wrapper
+{
+	width: 1400px;
+	margin: 0 auto;
+}
+
+#loading
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: 40%;
+	background: url('../images/loading.gif') no-repeat;
+}
+
+/*LANDING PAGE CSS */
+
+.home  {
+    width: 1024px;
+    height: 768px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+h2{
+	font-family: arrowFont;
+	color: white;
+	font-size: 1.2em;
+
+	z-index: -1;
+
+	opacity: 0;
+	
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+
+}
+
+.layer div  {
+    position: absolute;
+}
+
+.arrow1 h2
+{
+	position: absolute;
+	left: 125px;
+	top: 15px;
+
+	font-size: 1.4em;
+}
+
+.arrow1:hover h2{
+	opacity: 1;
+	left: 125px;
+	top: 0px;
+}
+
+.arrow1 a:hover{
+	background: url(../images/arrow1-hover.png) no-repeat center center;
+}
+
+.arrow1 {
+	top: 450px;
+	left: 400px;
+}
+
+.arrow1 span
+{
+	visibility: hidden;
+}
+
+.arrow1 a
+{
+	background: url(../images/arrow1.png) no-repeat center center;
+	display: block;
+	width: 374px;
+	height: 54px;
+
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.arrow2 h2
+{
+	position: absolute;
+	left: 65px;
+	top: 5px;
+}
+
+.arrow2:hover h2{
+	opacity: 1;
+	left: 65px;
+	top: -7px;
+}
+
+ 
+.arrow2 {
+	top: 550px;
+	left: 300px;
+}
+
+.arrow2 span
+{
+	visibility: hidden;
+}
+
+.arrow2 a{
+	background: url(../images/arrow2.png) no-repeat center center;
+	display: block;
+	width: 254px;
+	height: 37px;
+
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.arrow2 a:hover{
+	background: url(../images/arrow2-hover.png) no-repeat center center;
+}
+
+
+.arrow3 h2
+{
+	position: absolute;
+	left: 50px;
+	top: 5px;
+
+	font-size: 0.95em;
+}
+
+.arrow3:hover h2{
+	opacity: 1;
+	top: -7px;
+}
+ 
+.arrow3 {
+	top: 375px;
+	left: 350px;
+}
+
+.arrow3 span
+{
+	visibility: hidden;
+}
+
+.arrow3 a
+{
+	background: url(../images/arrow3.png) no-repeat center center;
+	display: block;
+	width: 225px;
+	height: 27px;
+
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.arrow3 a:hover{
+	background: url(../images/arrow3-hover.png) no-repeat center center;
+}
+ 
+.arrow4 {
+	top: 200px;
+	left: 600px;
+}
+ 
+.arrow5 {
+	top: 300px;
+	left: 350px;
+}
+ 
+.arrow6 {
+	top: 150px;
+	left: 400px;
+}
+
+.arrow7 {
+	top: 125px;
+	left: 600px;
+}
+
+/* BIO */
+
+.bio h1
+{
+	width: 269px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+#gallery
+{
+	margin: 0 auto;
+}
+
+.bio #bigImage
+{
+	position: absolute;
+	bottom: 0px;
+	left: 50px;
+}
+
+.bio #slider img
+{
+	width: 500px;
+	margin: 0 auto;
+	background-color: green;
+}
+
+.bio #slider
+{
+	position: absolute;
+	width: 500px;
+	height: 500px;
+
+	left: 800px;
+	top: 100px;
+}
+
+.center
+{
+	position: absolute;
+	left: 800px;
+	width: 500px;
+	height: 500px;
+
+	background-color: red;
+}
+
+/* HISTORY */
+
+.history h1
+{
+	width: 162px;
+	margin: 0 auto;
+}
+
+/* FEATURED */
+
+.featH h1
+{
+	width: 325px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+video
+{
+	display: block;
+	width: 1020px;
+	margin: 0 auto;
+}
+
+.featured
+{
+	background: url(../images/bggray.png) no-repeat center center;
+}
+
+
